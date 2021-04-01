@@ -1,11 +1,10 @@
 <template>
   <header class="header">
-    <h1 class="title">Dad Jokes</h1>
+    <nuxt-link to="/"> <h1 class="title">Dad Jokes</h1> </nuxt-link>
     <ul>
       <li>
-        <nuxt-link to="/">Home</nuxt-link>
-        <nuxt-link to="/jokes">Jokes</nuxt-link>
-        <nuxt-link to="/about">About</nuxt-link>
+        <nuxt-link to="/jokes" class="header-link">Jokes</nuxt-link>
+        <nuxt-link to="/about" class="header-link">About</nuxt-link>
       </li>
     </ul>
   </header>
@@ -33,11 +32,7 @@ export default {
 .header ul {
   display: flex;
 }
-.header a {
-  display: inline-block;
-  background: #000033;
-  color: #fff;
-  padding: 0.3rem 1rem;
-  margin-right: 0.5rem;
+.header-link {
+  margin: 0.5rem;
 }
 </style>
